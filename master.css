@@ -43,6 +43,7 @@ li{
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    margin-left: min(10px);
     width: 18%;
     /* background-color: cadetblue; */
     text-align: center;
@@ -379,22 +380,45 @@ h3{
 }
 
 
+
 .thumb{
     background-color: #f0f1f7;
     width: 100%;
+    height: 35vw;
     overflow: hidden;
     margin-top: 10%;
-    height: 80vh;
+    margin-bottom: 50px;
+    justify-content: space-evenly;
 
 }
 
 
 .thumb img{
     display: flex;
-    width: 50%;
+    width: 40vw;
     height: fit-content;
     align-self: flex-start;
 }
+
+.thumb h5 {
+    color: #fc6485;
+} 
+.thumb .wrap p{
+    margin-left: 35px;
+}
+.check-icon-3{
+    display: inline-flex;
+    height: 25px;
+    width: 25px;
+    color: white;
+    background-color: #32c36a;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
 
 
 .section3{
@@ -421,8 +445,8 @@ h3{
     /* background-color: #ea4d89; */
     
 }
-.content-3 ul{
-    width: 40%;
+.content-3 .ul{
+    width: 45%;
     padding:2% ;    
     justify-content: space-between;
     padding-bottom: 5%;
@@ -430,30 +454,43 @@ h3{
 }
 
 
-.content-3 ul li {
+.content-3 .ul .li {
     position: relative;
     width: 100%;
     margin: 3%;
     padding: 5%;
-    
-    border: #1f2134 1px solid;
+    padding-left: 15%;
+    border: #1f2134 2px solid;
     border-radius: 5px;
-    align-items: center;
-    justify-content: flex-start;
-    /* background-color: #3679ff; */
+    /* justify-content: flex-start; */
 }
 
-.content-3 ul li h3::before{
-    content: "";
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    left: 130px;
+
+.bullet{
+    position:absolute;
+    width: 25px;
+    height: 25px;
     border-radius: 50%;
-    background-color:#6b88f7 ;
+  
+    left: 5%;
+    top: 25%;
 }
 
-.content-3 ul li h3 {
+.b-1{
+    background-color: #ff3e66;
+}
+
+
+.b-2{
+    background-color: #2eacfc;
+}
+
+
+.b-3{
+    background-color: #33c956;
+}
+
+.content-3 .ul .li h3 {
     margin: 3% ;
     margin-left: 0px;
     margin-bottom: 1%;
@@ -461,8 +498,10 @@ h3{
 }
 
 
-.content-3 ul li p {
+.content-3 .ul .li p {
     margin-bottom: 3%;
+    color: #8e909f;
+
 }
 
 
@@ -488,9 +527,28 @@ h3{
     width: 20%;
     padding: 20px;
     align-items: center;
-    box-shadow: 0px 40px 30px 3px rgb(221, 232, 220);
     border-radius: 5px;
 }
+
+.ic-1 {
+    box-shadow: 0px 40px 30px 3px#e8ebed;
+
+}
+
+
+.ic-2 {
+    box-shadow: 0px 40px 30px 3px#edebe8;
+}
+
+.ic-3{
+    box-shadow: 0px 40px 30px 3px #e9f0e9;
+}
+
+.ic-4 {
+    box-shadow: 0px 40px 30px 3px#f1eaef;
+}
+
+
 
 .section-4 .images  {
     position: relative;
@@ -636,22 +694,6 @@ h3{
     
 }
 
-/* 
-.section-6 .head-6 .toggle::after{
-    position: absolute;
-    content: "";
-    width: 100px;
-    height: 30px;
-    background-color: #ea4d89;
-    border-radius: 50px;
-    top: 3px;
-    left: 3px;
-    z-index: 3;
-    transition: .4s;
-   
-    
-} */
-
 
 .section-6 .head-6 label {
     width: 50%;
@@ -673,12 +715,6 @@ input[id="switch-1"]:checked ~ label[for="switch-1"] ,
 input[id="switch-2"]:checked ~ label[for="switch-2"]  {
     color: white;
     background-color: #ea4d89;
-}
-
-input[id="switch-1"]:checked ~ .toggle::after{
-    transition: 7px;
-    top: 3px;
-    left: 3px;
 }
 
 
@@ -872,12 +908,22 @@ input[id="r-3"]:checked ~ label[for="r-3"] button {
     font-size: 20px;
 
 }
+.reviwe .name span{
+    margin-left: 10px;
+}
 
+.reviwe .name {
+    width: 100%;
+    justify-content: space-between;
+}
 .reviwe .name span h3{
     margin-bottom: 1%;
 }
 
-
+.bo i{
+    color: white;
+    align-self: flex-end;
+}
 
 .head-6{
     align-self: center;
@@ -1036,6 +1082,22 @@ footer .last p{
         width: 70%;
         margin-bottom: 10%;
     }
+
+    
+    .thumb img{
+        display: none;
+    }
+
+    .thumb {
+        text-align: center;
+        padding: 20px;
+        height: auto;
+    }
+    .col {
+        flex-direction: column;
+        text-align: start;
+        width: 80%;
+    }
 }
 
 
@@ -1078,7 +1140,7 @@ footer .last p{
         padding: 50px;
     }
 
-    .content-3 ul ,
+    .content-3 .ul ,
     .content-3 img  {
         width: 100%;
     }
