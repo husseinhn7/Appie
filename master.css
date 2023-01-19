@@ -78,14 +78,23 @@ body{
 .hover:hover{
     background-color:  #ea4d89;
     color: white;
+    height: 30px;
     cursor: pointer;
 }
 
+button:hover{
+    cursor: pointer;
+}
+
+footer li:hover{
+    cursor: pointer;
+}
 
 /* Start Navbar */
 
 .nav{
     justify-content: space-between;
+    height: 80px;
 }
 
 .logo{
@@ -98,6 +107,8 @@ body{
 .logo ul {
     width:clamp(300px , 65% , 700px);
     list-style: none;
+    height: 100%;
+
     align-items: center;
     justify-content: space-between; 
     margin-left: clamp(50px , 10% , 300px);
@@ -105,7 +116,9 @@ body{
 }
 
 li{
+    position: relative;
     display: flex;
+    height: 100%;
     flex-direction: row;
     align-items: center;
     justify-content: center;
@@ -440,6 +453,11 @@ h3{
 }
 
 
+.card:hover {
+    box-shadow: 0px 0px 20px 20px #eee;
+    cursor: pointer;
+
+}
 
 .thumb{
     background-color: #f0f1f7;
@@ -1161,6 +1179,10 @@ footer .do{
     border: 2px solid #e7eaef ;
     margin-left: 5px;
 }
+
+
+
+
 
 
 @media (max-width : 1000px){
