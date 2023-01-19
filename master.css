@@ -13,23 +13,89 @@ body{
 }
 
 
+.p-10{
+    padding: 0px 50px;
+    padding-top: 20px ;
+
+}
+
+.mlr-40{
+    margin:0px 40px;
+}
+.mtb-30 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.m-b{
+    margin-bottom: 8%;
+}
+.df-r{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+
+.df-c{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+
+.f-w{
+    width: 100%;
+}
+
+
+.btn {
+    border-radius: 100px;
+    border:none;
+    padding: 10px 20px;
+}
+
+
+.i-r {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+
+.il{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.hover:hover{
+    background-color:  #ea4d89;
+    color: white;
+    cursor: pointer;
+}
+
+
 /* Start Navbar */
 
 .nav{
-    /* background-color: blanchedalmond; */
     justify-content: space-between;
 }
 
 .logo{
     width: clamp(250px , 60%,700px);
-    /* background-color: blueviolet; */
     align-items: center;
     justify-content: space-between; 
 }
 
 
 .logo ul {
-    /* background-color: aqua; */
     width:clamp(300px , 65% , 700px);
     list-style: none;
     align-items: center;
@@ -45,9 +111,7 @@ li{
     justify-content: center;
     margin-left: min(10px);
     width: 18%;
-    /* background-color: cadetblue; */
     text-align: center;
-    /* margin-left: 4%; */
 }
 
 
@@ -91,7 +155,6 @@ li i {
 
 .des {
     margin-top: 10%;
-    /* background-color: #ff3e66; */
     justify-content: space-between;
 }
 
@@ -102,7 +165,6 @@ span{
 .text{
     width: 45%;
 
-    /* background-color: aquamarine; */
 }
 .text h1{
     font-size: clamp(20px , 5vw , 60px);
@@ -121,7 +183,6 @@ p{
     height: 50px;
     margin-bottom: 30px;
 
-    /* background-color: antiquewhite; */
 }
 
 
@@ -344,7 +405,6 @@ h3{
         width: 50%;
         overflow: hidden;
         margin-bottom: -40px;
-        /* background-color: #ff3e66; */
     
     
     }
@@ -436,13 +496,11 @@ h3{
 .content-3{
     width: 100%;
     justify-content: space-evenly;
-    /* background-color: #aaa; */
 
 }
 .content-3 img{
     width: 40%;
     height: fit-content;
-    /* background-color: #ea4d89; */
     
 }
 .content-3 .ul{
@@ -462,7 +520,6 @@ h3{
     padding-left: 15%;
     border: #1f2134 2px solid;
     border-radius: 5px;
-    /* justify-content: flex-start; */
 }
 
 
@@ -599,6 +656,7 @@ h3{
 
 .section-4 .content-4 .text-wrapper{
     margin-top: 20px;
+    width: 100%;
     margin-left: 50px;
 }
 .b2{
@@ -613,7 +671,7 @@ h3{
 }
 .button-text .buttons{
     align-self: flex-end;
-    width: 100%;
+    width: 20%;
 }
 .button-text{
     justify-content: space-between;
@@ -968,10 +1026,32 @@ input[id="r-3"]:checked ~ label[for="r-3"] button {
     justify-content: center;
 }
 
+
+.sponsor-icons-2{
+    width: 90%;
+    flex-wrap: wrap;
+    align-self: center;
+    align-items: center;
+    justify-items: center;
+    justify-content: center;
+}
+
 .spo-ico{
-    height: 150px  ;
+    height: 10vw  ;
     display: flex;
-    width:13% ;
+    width:10% ;
+    margin: 1%;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 10px 20px 10px#ededef;
+}
+
+
+
+.spo-ico-2{
+    height: 12vw  ;
+    display: flex;
+    width:12% ;
     margin: 1%;
     align-items: center;
     justify-content: center;
@@ -1265,6 +1345,62 @@ footer .do{
     .section-4 .content-4 .text-wrapper{
         margin-left: 0px;
     }
+
+
+    .r-buttons{
+        display: none;
+    }
+
+    .spo-ico ,
+    .spo-ico-2 {
+        width: 24%;
+        height: 20vw;
+    }
+
+
+    
+.bullet{
+    position:absolute;
+    width: 20px;
+    height: 20px;
+  
+    left: 5%;
+    top: 20%;
+}
+
+
+.ic-1 {
+    box-shadow: 0px 0px 40px 6px#e8ebed;
+
+}
+
+
+.ic-2 {
+    box-shadow: 0px 0px 40px 6px#edebe8;
+}
+
+.ic-3{
+    box-shadow: 0px 0px 40px 6px #e9f0e9;
+}
+
+.ic-4 {
+    box-shadow: 0px 0px 40px 6px #f1eaef;
+}
+.reviwe p {
+    font-size: 15px;
+}
+
+.wrap h3{
+    font-size: 15px;
+      
+}
+
+footer ul li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+    
 }
 
 
