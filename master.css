@@ -607,8 +607,13 @@ h3{
     width: 50px;
     height: 50px;
 }
+
+.img-3{
+    display: none;
+}
 .button-text .buttons{
     align-self: flex-end;
+    width: 100%;
 }
 .button-text{
     justify-content: space-between;
@@ -638,20 +643,44 @@ h3{
     color: white;
     background-color: #0e1133;
     border-radius: 20px;
-    font-size: 50px;
-    width: 250px;
+    width: clamp(150px , 30vw , 300px);
 
 }
 
+.section-5 .buttons .app-stor i {
+    font-size: clamp(30px , 3vw, 100px);
+
+}
+.section-5 .buttons .app-stor span {
+    word-wrap: break-word;
+    overflow: hidden;
+    font-size: clamp(10px ,2vw, 50px);
+}
+
+.section-5 .buttons .app-stor h5 {
+    font-size: clamp(20px , 1vw, 50px);
+}
+
+.section-5 .buttons .play-stor i {
+    font-size: clamp(30px , 3vw, 100px);
+
+}
+.section-5 .buttons .play-stor span {
+    font-size: clamp(10px ,2vw, 50px);
+}
+
+.section-5 .buttons .play-stor h5 {
+    font-size: clamp(20px , 1vw, 50px);
+}
 
 .section-5 .buttons .play-stor{
     padding: 12px;
     font-size: 50px;
-    width: 200px;
     border-radius: 20px;
     border: #0e1133 2px solid;
     margin-left: 5px ;
-    width: 250px;
+    width: clamp(150px , 30vw , 300px);
+
 
 
 }
@@ -1053,9 +1082,6 @@ footer .do{
     margin-left: 5px;
 }
 
-footer .last p{
-    align-self: flex-end;
-}
 
 @media (max-width : 1000px){
     .card{
@@ -1164,6 +1190,80 @@ footer .last p{
 
     .name{
         align-self: center;
+    }
+    .pt-1{
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    footer .pt-1 .list-1 , 
+    footer .pt-1 .list-2 ,
+    footer .pt-1 .list-3 ,
+    footer .pt-1 .list-4 {
+        width:  80%;
+        margin-bottom: 5%;
+        align-items: center;
+    }
+    footer .brans{
+        width: 40%;
+        align-self: center;
+    }
+    footer img {
+        width: 40%;
+        align-self: center;
+    }
+    .last{
+        flex-direction: column;
+        align-items: center;
+    }
+    .brans .br {
+        margin-left: min(5px);
+    }
+    .last p {
+        align-self: center;
+        text-align: center;
+    }
+
+    footer ul li {
+        align-items: center;
+        text-align: center;
+    }
+
+    .img-3{
+        display: block;
+        width: 100%;
+    }
+
+    .img-2{
+        display: none;
+    }
+
+    .section-4 .images .img-1{
+        width: 100%;
+    }
+
+
+    .section-4 .images .play-button {
+        width: 50px;
+        height: 50px;
+        top: calc(50%-35px);
+        left: calc(100%*0.5 - 25px);
+       
+    }
+    
+    .section-4 .images::after {
+        
+        width: 60px;
+        height: 60px;
+        top: calc(50%-30px);
+        left: calc(50% - 32px);
+
+    }
+
+    .section-4 .content-4 .text-wrapper{
+        margin-left: 0px;
     }
 }
 
